@@ -18,7 +18,7 @@ stage('Cleancache') {
 stage ('Checkout') {
             steps {
                 //this is a comment 
-                git credentialsId: 'userId', url: 'https://github.com/wonks2021/nettake2.git',branch: 'master'
+                git credentialsId: 'userId', url: 'https://github.com/wonks2021/nettake2.git',branch: 'main'
             }
 }
 stage ('Restore PACKAGES') {     
@@ -82,7 +82,7 @@ stage('Pack') {
                    "files": [
                       {
                       "pattern": "nuget101-nuget-local/SampleCliApp.1.0.0.nupkg",
-                      "target": "/home/ubuntu/jenkins/workspace/dotnet/"
+                      "target": "/home/ubuntu/jenkins/workspace/artidownload/"
                       }
                             ]
                            }''',
