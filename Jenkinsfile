@@ -18,7 +18,7 @@ stage('Cleancache') {
 stage ('Checkout') {
             steps {
                 //this is a comment 
-                git credentialsId: 'userId', url: 'https://github.com/wonks2021/hello/nettake1.git',branch: 'master'
+                git credentialsId: 'userId', url: 'https://github.com/wonks2021/nettake2.git',branch: 'master'
             }
 }
 stage ('Restore PACKAGES') {     
